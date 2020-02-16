@@ -1,0 +1,6 @@
+outputFormats:
+  redir:
+    mediaType: text/plain
+    baseName: redirects
+    isPlainText: true
+    notAlternative: true

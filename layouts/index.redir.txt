@@ -1,0 +1,7 @@
+{{- range $p := .Site.Pages -}}
+{{ range .Aliases }}
+{{- $trimmed := ( strings.TrimSuffix "/" ( strings.TrimPrefix "/" . ) ) -}}
+/{{ $trimmed }} {{ $p.RelPermalink }}
+/{{ $trimmed }}/ {{ $p.RelPermalink -}}
+{{ end -}}
+{{- end -}}
